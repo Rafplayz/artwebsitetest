@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="rafplayz.dev | art">
+  <title>rafplayz.dev | art</title>
+  <style>
+    * {
+      font-family: 'Comic Code', 'Roboto', sans-serif;
+    }
+    html {
+      margin: 0;
+    }
+    body {
+      background-color: #111;
+      color: white;
+      margin: 0;
+    }
+    main.centerflex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1,h2,h3,h4,p {
+      text-align: center;
+    }
+    p {
+      max-width: 600px;
+    }
+    div#fulldisplay {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+    div#fulldisplay > img {
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+      cursor: pointer;
+    }
+    div.artgrid {
+      width: 100%;
+      height: 100%;
+    }
+    div.art {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+    }
+    div.art > * {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="fulldisplay" style="display:none">
+    <img src="free art/rafthereal.png">
+  </div>
+  <main class="centerflex">
+    <h1> Character </h1>
+    <div class="characterinfo" style="max-width:80%">
+      <img width=700px src="commissioned/updatedref.png" alt="character reference" width="auto">
+    </div>
+    <p> my baby. reference by the lovely @fi4estorm on instagram </p>
+      
+    <p> this reference is a little old: her pronouns are she/her, and the sprout on her head shown in other drawings is not optional! </p>
+    <h1> Art </h1>
+    <div id="content">
+      <div class="artsection">
+        <h2> Commissioned </h2>
+        <div class="artgrid">
+          <div class="art"><img src="commissioned/artibust.png"></div>
+          <div class="art"><img src="commissioned/pxunii1.jpg"></div>
+        </div>
+      </div>
+      <div class="artsection">
+        <h2> Free art (&lt;3) </h2>
+        <div class="artgrid">
+          <div class="art"><img src="free art/raf_arf_arf.png"></div>
+          <div class="art"><img src="free art/rafthereal.png"></div>
+          <div class="art"><img src="free art/storme drawing.gif"></div>
+          <div class="art"><img src="free art/gay_people.png"></div>
+          <div class="art"><img src="free art/blooningcol.png"></div>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
