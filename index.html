@@ -34,36 +34,48 @@
       width: 100%;
       height: 100%;
       z-index: 10;
+      background-color: rgba(0, 0, 0, 0.8)
     }
     div#fulldisplay > img {
       position:absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      max-width: 100%;
+      max-width: 80%;
       max-height: 100%;
       cursor: pointer;
+    }
+    div.artsection {
+      margin-bottom: 30px;
     }
     div.artgrid {
       width: 100%;
       height: 100%;
     }
     div.art {
+      cursor: pointer;
       display: inline-block;
       width: 200px;
       height: 200px;
+      border: 3px solid black;
+      border-radius: 10px;
     }
     div.art > * {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      border-radius: 10px;
     }
   </style>
+
+  <script defer src="main.js">
+
+  </script>
 </head>
 
 <body>
   <div id="fulldisplay" style="display:none">
-    <img src="free art/rafthereal.png">
+    <img class="innerFullscreen" src="free art/rafthereal.png">
   </div>
   <main class="centerflex">
     <h1> Character </h1>
@@ -73,24 +85,32 @@
     <p> my baby. reference by the lovely @fi4estorm on instagram </p>
       
     <p> this reference is a little old: her pronouns are she/her, and the sprout on her head shown in other drawings is not optional! </p>
-    <h1> Art </h1>
+    <h1> Art (click to expand!) </h1>
     <div id="content">
       <div class="artsection">
         <h2> Commissioned </h2>
         <div class="artgrid">
-          <div class="art"><img src="commissioned/artibust.png"></div>
-          <div class="art"><img src="commissioned/pxunii1.jpg"></div>
+          <div class="art" title=""><img src="commissioned/artibust.png"></div>
+          <div class="art" title=""><img src="commissioned/pxunii1.jpg"></div>
         </div>
       </div>
       <div class="artsection">
         <h2> Free art (&lt;3) </h2>
         <div class="artgrid">
-          <div class="art"><img src="free art/raf_arf_arf.png"></div>
-          <div class="art"><img src="free art/rafthereal.png"></div>
-          <div class="art"><img src="free art/storme drawing.gif"></div>
-          <div class="art"><img src="free art/gay_people.png"></div>
-          <div class="art"><img src="free art/blooningcol.png"></div>
-          
+          <div class="art" title="made by bee! in mspaint :3"><img src="free art/raf_arf_arf.png"></div>
+          <div class="art" title="made by bear"><img src="free art/rafthereal.png"></div>
+          <div class="art" title="a surprise animation @fi4estorm made for me on instagram :3"><img src="free art/storme drawing.gif"></div>
+          <div class="art" title="made by bear, with scrunky's oc"><img src="free art/gay_people.png"></div>
+          <div class="art" title="made by bear, with scrunky's oc"><img src="free art/blooningcol.png"></div>
+          <div class="art" title="from an instagram post by @fi4estorm"><img src="free art/6drawings1.png"></div>
+        </div>
+      </div>
+      <div class="artsection">
+        <h2> Other </h2>
+        <div class="artgrid">
+          <div class="art" title="the first ever drawing of her!! :3"><img src="other/first.png"></div>
+          <div class="art" title="alt version without colouring and with the sprout"><img src="other/6drawings2.png"></div>
+          <div class="art" title="something bee drew that i used as my banner for a long time"><img src="other/banner.png"></div>
         </div>
       </div>
     </div>
